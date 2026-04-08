@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    background-color: bisque;
+}
+
+
+.index {
+    display: grid;
+    grid-template-rows: 100px auto auto auto auto 200px;
+    grid-template-areas: "header"
+                         "welkom"
+                         "blog"
+                         "plattegrond"
+                         "socials"
+                         "footer";
+
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    grid-area: header;
+    background-color: #aa182c;
+    
+    
+}
+
+.welkom {
+    grid-area: welkom;
+}
+
+.blog {
+    grid-area: blog;
+}
+
+.plattegrond {
+    grid-area: plattegrond;
+}
+
+.socials {
+    grid-area: socials;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+
+.logo {
+    width: 150px;
+    margin-left: 15%;
+    margin-top: 0.3%;
+    
+}
+
+.ip-info {
+    position: absolute;
+    right: 5%;
+    top: 0.3%;
+    text-align: center;
+}
+
+#ip-name {
+    font-family: lettertype;
+    color: white;
+    font-size: 19px;
+
+}
+
+#ip-versie {
+    font-family: lettertype;
+    color: white;
+    font-size: 15px;
+}
+
+.informatie {
+    position: absolute;
+    left: 60%;
+    top: 2%;
+    font-size: 15px;
+    font-family: lettertype;
+    color: white;
+    cursor: pointer;
+
+}
+
+.dropdown-info {
+    display: none;
+}
+
+.informatie:hover  .dropdown-info{
+    display: inline-block;
+    opacity: 1;
+    
+}
+
+.dropdown-info a{
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    width: 200px;
+    color: #796a5d;
+    text-decoration: none;
+    box-shadow: 0px 40px 48px #32324725, 0px 24px 24px #32324710;
+
+    
+}
+
+.dropdown-info a:hover {
+    background-color: #aa182c;
+    color: white;
+    
+}
+
+.informatie:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+
+
+
+.ontdek-het-park {
+    position: absolute;
+    left: 45%;
+    top: 2%;
+    font-size: 15px;
+    font-family: lettertype;
+    color: white;
+    cursor: pointer;
+
+}
+
+.dropdown-park a {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    width: 200px;
+    color: #796a5d;
+    text-decoration: none;
+    box-shadow: 0px 40px 48px #32324725, 0px 24px 24px #32324710;
+}
+
+.dropdown-park {
+    display: none;
+}
+
+.ontdek-het-park:hover  .dropdown-park{
+    display: inline-block;  
+}
+
+.dropdown-park a:hover {
+    background-color: #aa182c;
+    color: white;
+    
+}
+
+.ontdek-het-park:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.row {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 4px;
+    
+}
+
+.menu-icon {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    right: 10%;
+    top: 3.3%;
+    display: none;
+}
+
+#dropdown-phone {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0%;
+    display: none;
+}
+
+
+#dropdown-phone a {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    width: 200px;
+    color: #796a5d;
+    text-decoration: none;
+    font-family: lettertype;
+    font-size: 15px;
+}
+
+#dropdown-phone a:hover {
+    background-color: #aa182c;
+    color: white;
+}
+
+
+@media (max-width: 1280px) {
+    .ip-info {
+        display: none;
+    }
+
+    .informatie {
+        left: 80%;
+    }
+
+    .ontdek-het-park {
+        left: 40%;
+    }
+}
+
+@media (max-width: 680px) {
+    .informatie {
+        display: none;
+    }
+
+    .ontdek-het-park {
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+    }
+}
+
+
